@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+       Licensed to the Apache Software Foundation (ASF) under one
+       or more contributor license agreements.  See the NOTICE file
+       distributed with this work for additional information
+       regarding copyright ownership.  The ASF licenses this file
+       to you under the Apache License, Version 2.0 (the
+       "License"); you may not use this file except in compliance
+       with the License.  You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing,
+       software distributed under the License is distributed on an
+       "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+       KIND, either express or implied.  See the License for the
+       specific language governing permissions and limitations
+       under the License.
+-->
+<manifest xmlns:a="http://schemas.android.com/apk/res/android" a:windowSoftInputMode="adjustPan"
+      package="com.htc.sample.phonegaplockscreen" a:versionName="0.1" a:versionCode="1">
+
+	<uses-sdk 
+	    a:targetSdkVersion="15" 
+	    a:minSdkVersion="7"
+	    />
+	    
+    <supports-screens
+        a:largeScreens="true"
+        a:normalScreens="true"
+        a:smallScreens="true"
+        a:xlargeScreens="true"
+        a:resizeable="true"
+        a:anyDensity="true"
+        />
+
+    <uses-permission a:name="android.permission.CAMERA" />
+    <uses-permission a:name="android.permission.VIBRATE" />
+    <uses-permission a:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission a:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission a:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission a:name="android.permission.INTERNET" />
+    <uses-permission a:name="android.permission.RECEIVE_SMS" />
+    <uses-permission a:name="android.permission.RECORD_AUDIO" />
+    <uses-permission a:name="android.permission.RECORD_VIDEO"/>
+    <uses-permission a:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission a:name="android.permission.READ_CONTACTS" />
+    <uses-permission a:name="android.permission.WRITE_CONTACTS" />   
+    <uses-permission a:name="android.permission.WRITE_EXTERNAL_STORAGE" />   
+    <uses-permission a:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission a:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission a:name="android.permission.BROADCAST_STICKY" />
+    
+    <uses-permission a:name="android.permission.WAKE_LOCK"/>
+    <uses-permission a:name="com.htc.idlescreen.permission.IDLESCREEN_SERVICE" />
+
+    <application a:icon="@drawable/icon" a:label="@string/app_name"
+        a:debuggable="true">
+        <activity a:name=".ExampleActivity" a:label="@string/app_name" 
+                  a:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action a:name="android.intent.action.MAIN" />
+                <category a:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+   		<uses-library a:name="com.htc.lockscreen.fusion" a:required="false" />
+		<uses-library a:name="com.htc.fusion.fx" a:required="false" /> 
+		
+		<service a:name="com.htc.sample.phonegaplockscreen.support.SampleService" a:enabled="false">
+			<intent-filter>
+				<action a:name="com.htc.lockscreen.idlescreen.IdleScreenService"/>
+			</intent-filter>
+			<meta-data a:name="com.htc.lockscreen.idlescreen" a:resource="@xml/idlescreen"/>
+		</service> 
+		
+   		<service a:name="com.htc.sample.phonegaplockscreen.support.SampleServiceLegacy" a:enabled="false">
+			<intent-filter>
+				<action a:name="com.htc.lockscreen.idlescreen.IdleScreenService"/>
+			</intent-filter>
+			<meta-data a:name="com.htc.lockscreen.idlescreen" a:resource="@xml/idlescreen"/>
+		</service>	
+		
+    </application>
+</manifest> 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">cordovaExample</string>
+    
+    	<string name="company">put company in strings.xml</string>
+    <string name="desc">put desc in strings.xml</string>
+    
+</resources>
