@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#FFF"
+	>
+	
+	<TextView
+   		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	    android:textColor="#000"
+	    android:text="Entered text: "
+	    android:padding="10dp"
+		/>
+	
+	<TextView
+        android:id="@+id/text"
+   		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+	    android:gravity="center"
+	    android:textColor="#000"
+	    android:text=""
+	    android:paddingBottom="10dp"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+		/>
+	
+	<TableLayout
+        android:id="@+id/table"
+   		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="*"
+		>
+	    <TableRow>
+	        <TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " /><TextView android:text="r" /><TextView android:text="t" /><TextView android:text="y" /> <TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " />
+	    </TableRow>
+	    <TableRow>
+	        <TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " /><TextView android:text="d" /><TextView android:text=" " /><TextView android:text="f" /> <TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " />
+	    </TableRow>
+   	    <TableRow>
+	        <TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " /><TextView android:text="v" /><TextView android:text="b" /><TextView android:text="n" /> <TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " />
+	    </TableRow>
+
+   	    <TableRow>
+	        <TextView android:text="q" /><TextView android:text="w" /><TextView android:text="e" /><TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " /> <TextView android:text="u" /><TextView android:text="i" /><TextView android:text="o" />
+	    </TableRow>
+   	    <TableRow>
+	        <TextView android:text="a" /><TextView android:text=" " /><TextView android:text="s" /><TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " /> <TextView android:text="g" /><TextView android:text=" " /><TextView android:text="h" />
+	    </TableRow>
+   	    <TableRow>
+	        <TextView android:text="z" /><TextView android:text="x" /><TextView android:text="c" /><TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " /> <TextView android:text="m" /><TextView android:text="," /><TextView android:text="." />
+	    </TableRow>
+
+   	     <TableRow>
+	        <TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " /><TextView android:text="p" /><TextView android:text="[" /><TextView android:text="]" /> <TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " />
+	    </TableRow>
+   	    <TableRow>
+	        <TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " /><TextView android:text="j" /><TextView android:text=" " /><TextView android:text="k" /> <TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " />
+	    </TableRow>
+   	    <TableRow>
+	        <TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " /><TextView android:text="!" /><TextView android:text="\?" /><TextView android:text="l" /> <TextView android:text=" " /><TextView android:text=" " /><TextView android:text=" " />
+	    </TableRow>
+	    	    	    	    
+	 </TableLayout>
+
+	<TextView
+   		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	    android:textColor="#000"
+	    android:text="Controller Status: "
+	    android:padding="10dp"
+		/>
+		
+	<TextView
+        android:id="@+id/zeemoteStatus"
+   		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	    android:textColor="#000"
+	    android:text=""
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+		/>
+	
+	<Button
+        android:id="@+id/controllerSetupButton"
+   		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:text="Setup Controller"
+		/>
+		
+</LinearLayout>
