@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:a="http://schemas.android.com/apk/res/android"
+	a:id="@+id/content" 
+    a:orientation="vertical"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:background="#FFF"
+    a:gravity="center"
+    >
+
+   	<LinearLayout 
+	    a:layout_width="fill_parent"
+	    a:layout_height="wrap_content"
+	    a:orientation="horizontal"
+	    a:layout_margin="10dp"
+	    a:gravity="center"
+	    >
+		<ImageView  
+		    a:layout_height="wrap_content"
+		    a:layout_width="wrap_content"
+		    a:padding="5dp"
+		    a:gravity="center_horizontal"		    
+		    a:src="@drawable/icon_clean"
+		    />
+		<TextView  
+		    a:layout_height="wrap_content"
+		    a:layout_width="wrap_content"
+		    a:layout_weight="1"
+		    a:textSize="20sp"
+		    a:textStyle="bold"
+		    a:textColor="#000"	    
+		    a:text="HTC Gets Mobile"
+		    />
+		<Button 
+			a:id="@+id/share" 
+		    a:layout_height="wrap_content"
+		    a:layout_width="wrap_content"
+		    a:paddingTop="5dp"
+		    a:paddingBottom="5dp"
+		    a:paddingLeft="10dp"
+		    a:paddingRight="10dp"
+		    a:textSize="14sp"
+		    a:textStyle="bold"
+		    a:textColor="#fff"
+		    a:gravity="center"
+		    a:text="Share"
+		    a:background="@drawable/htc_button_dark"
+		    />
+	</LinearLayout>
+	
+	<LinearLayout 
+	    a:layout_width="fill_parent"
+	    a:layout_height="wrap_content"
+	    a:orientation="horizontal"
+   		a:gravity="center"
+	    a:layout_marginLeft="10dp"
+	    a:layout_marginRight="10dp"
+	    >
+		<Button  
+			a:id="@+id/previous" 
+		    a:layout_height="wrap_content"
+		    a:layout_width="wrap_content"
+		    a:padding="5dp"
+		    a:textSize="14sp"
+		    a:textStyle="bold"
+		    a:textColor="#fff"
+		    a:gravity="center"
+		    a:text="&lt;&lt;" 
+		    a:background="@drawable/htc_button_dark"
+		    />		
+		<TextView  
+			a:id="@+id/title" 
+		    a:layout_height="wrap_content"
+		    a:layout_width="wrap_content"
+		    a:padding="5dp"
+		    a:textSize="14sp"
+		    a:textStyle="bold"
+		    a:textColor="#000"
+		    a:gravity="center"	    
+		    />
+		<Button 
+			a:id="@+id/next" 
+		    a:layout_height="wrap_content"
+		    a:layout_width="wrap_content"
+		    a:padding="5dp"
+		    a:textSize="14sp"
+		    a:textStyle="bold"
+		    a:textColor="#fff"
+		    a:gravity="center"
+		    a:text=">>"
+		    a:background="@drawable/htc_button_dark"
+		    />
+	</LinearLayout>
+	<LinearLayout   
+	    a:id="@+id/gridview"
+	    a:layout_width="fill_parent" 
+	    a:layout_height="wrap_content"
+	    a:layout_weight="1"
+  		a:orientation="vertical"	    
+	    a:layout_margin="10dp"
+		>
+		<include layout="@layout/calendar_row"/>		
+		<include layout="@layout/calendar_row"/>
+		<include layout="@layout/calendar_row"/>
+		<include layout="@layout/calendar_row"/>
+		<include layout="@layout/calendar_row"/>
+		<include layout="@layout/calendar_row"/>	    
+	</LinearLayout>
+
+	<TextView  
+	    a:layout_height="wrap_content"
+	    a:layout_width="wrap_content"
+	    a:layout_marginLeft="10dp"
+	    a:layout_marginRight="10dp"
+	    a:layout_marginBottom="10dp"
+	    a:textSize="14sp"
+	    a:textStyle="bold"
+	    a:textColor="#000"	    
+	    a:text="Tap a day to set how many minutes you exercised!"
+	    />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+	xmlns:a="http://schemas.android.com/apk/res/android"
+	package="com.htc.sample.getsmobile"
+	a:versionCode="5"
+	a:versionName="3.2"
+	>
+
+	<uses-permission a:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission a:name="android.permission.INTERNET" />	
+			
+	<uses-sdk 
+	    a:targetSdkVersion="15" 
+	    a:minSdkVersion="7"
+	    />
+	
+    <uses-permission a:name="android.permission.WAKE_LOCK"/>
+    <uses-permission a:name="com.htc.idlescreen.permission.IDLESCREEN_SERVICE" />
+
+	<application 
+	    a:icon="@drawable/icon" 
+	    a:label="@string/app_name"
+	    >		
+		<activity 
+		    a:name=".activity.CalendarViewActivity"
+		    a:launchMode="singleTask"
+		    >
+			<intent-filter>
+				<action 
+				    a:name="android.intent.action.MAIN" 
+				    />
+				<category 
+				    a:name="android.intent.category.LAUNCHER" 
+				    />
+			</intent-filter>
+		</activity>
+		
+		<receiver
+	    	a:icon="@drawable/icon"
+    		a:label="Contest Exercise : HTC Gets Mobile"
+       		a:name=".widget.ContestWidgetProvider" >
+	       <intent-filter >
+	            <action a:name="android.appwidget.action.APPWIDGET_UPDATE" />
+	       </intent-filter>
+	
+	       <meta-data
+	          a:name="android.appwidget.provider"
+	          a:resource="@xml/contest_widget_info" />
+		</receiver>
+		
+		<receiver
+	    	a:icon="@drawable/icon"
+    		a:label="Month Exercise : HTC Gets Mobile"
+       		a:name=".widget.MonthWidgetProvider" >
+	       <intent-filter >
+	            <action a:name="android.appwidget.action.APPWIDGET_UPDATE" />
+	       </intent-filter>
+	
+	       <meta-data
+	          a:name="android.appwidget.provider"
+	          a:resource="@xml/month_widget_info" />
+		</receiver>
+		
+	</application>
+</manifest>

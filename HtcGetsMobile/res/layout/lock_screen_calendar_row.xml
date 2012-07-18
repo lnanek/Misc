@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:a="http://schemas.android.com/apk/res/android"
+    a:visibility="gone"
+	a:orientation="horizontal"	 
+    a:layout_width="fill_parent" 
+    a:layout_height="wrap_content"
+    >
+    <include layout="@layout/calendar_item"/>
+	<include layout="@layout/calendar_item"/>
+	<include layout="@layout/calendar_item"/>
+	<include layout="@layout/calendar_item"/>
+	<include layout="@layout/calendar_item"/>
+	<include layout="@layout/calendar_item"/>
+	<include layout="@layout/calendar_item"/>		
+</LinearLayout>

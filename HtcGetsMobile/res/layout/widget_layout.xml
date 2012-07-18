@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:a="http://schemas.android.com/apk/res/android"
+	a:id="@+id/widget_content"
+    a:layout_width="match_parent"
+    a:layout_height="match_parent"
+    a:orientation="vertical"    
+    a:background="@drawable/unselected_day"
+    a:clickable="true"
+    a:padding="5dp"
+    a:focusable="true"
+    >
+	<TextView 
+		a:id="@+id/date"
+		a:layout_width="wrap_content"
+		a:layout_height="wrap_content"
+		a:textColor="#000"
+		a:textSize="10sp"
+		a:text=" "
+		a:paddingBottom="5dp"
+		/>
+	<ImageView 
+		a:id="@+id/date_minutes"
+		a:layout_width="match_parent"
+		a:layout_height="match_parent"
+		a:layout_weight="1"
+		a:gravity="center"
+		a:scaleType="centerInside"
+		/>
+<!-- 	
+	<TextView 
+		a:id="@+id/date_minutes"
+		a:layout_width="match_parent"
+		a:layout_height="match_parent"
+		a:gravity="center"
+		a:textColor="#73b20e"
+		a:textSize="20sp"
+	    a:textStyle="bold"
+		a:text=" "
+		/>
+ -->
+</LinearLayout>

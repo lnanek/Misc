@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HTC Gets Mobile</string>
+    
+    <string name="hello">Open calendar</string>    
+	<string name="open">Open</string>
+	<string name="share_dialog_current_month_total">Individual Total\n(current month):</string>
+	<string name="share_dialog_contest_total">Individual Total\n(6/11/12 - 7/6):</string>
+	
+	<string name="company">HTC</string>
+    <string name="desc">http://htcdev.com</string>
+    
+    <string name="lock_screen_dialog_instructions">
+        See your exercise on your phone\'s lock screen:\n
+        1) Open <font size="40" face="arial" color="red">Settings</font> app\n
+        2) choose <font color="red">Personalize</font>\n
+        3) choose <font color="red">Lock screen style</font>
+    </string>
+    
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:a="http://schemas.android.com/apk/res/android"
+	a:id="@+id/calendar_item_border"    
+    a:layout_width="0px"  
+    a:layout_weight="1"
+    a:layout_height="match_parent"
+    a:background="#000"
+    >
+   	<LinearLayout 
+	    a:layout_width="match_parent"
+	    a:layout_height="match_parent"
+	    a:orientation="vertical"  
+	    a:background="#FFF"  
+	    >
+		<TextView 
+			a:id="@+id/date"
+			a:layout_width="wrap_content"
+			a:layout_height="wrap_content"
+			a:textColor="#000"
+			a:textSize="10sp"
+			a:paddingTop="5dp"
+			a:paddingLeft="5dp"
+			a:text=" "
+			/>
+		<com.htc.sample.getsmobile.view.DoodleTextView 
+			a:id="@+id/date_minutes"
+			a:layout_width="wrap_content"
+			a:layout_height="wrap_content"
+			a:layout_weight="1"
+			a:layout_gravity="center"
+			a:gravity="center"
+			a:textColor="#73b20e"
+			a:textSize="20sp"
+		    a:textStyle="bold"
+			a:text=" "
+			a:padding="5dp"
+			/>		
+	</LinearLayout>
+</FrameLayout>
