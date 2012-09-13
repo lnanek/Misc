@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:a="http://schemas.android.com/apk/res/android" package="com.example.twitteroauthbrowser" a:versionCode="1" a:versionName="1.0">
+    <application a:icon="@drawable/icon" a:label="@string/app_name">
+        <activity a:name="TwitterOAuthBrowser" a:label="@string/app_name" a:launchMode="singleInstance">
+            <intent-filter>
+                <action a:name="android.intent.action.MAIN" />
+                <category a:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action a:name="android.intent.action.VIEW" />
+                <category a:name="android.intent.category.DEFAULT" />
+                <category a:name="android.intent.category.BROWSABLE" />
+                <data a:scheme="myapp" a:host="twitteroauth" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-sdk a:minSdkVersion="4" />
+    <uses-permission a:name="android.permission.INTERNET" />
+</manifest> 

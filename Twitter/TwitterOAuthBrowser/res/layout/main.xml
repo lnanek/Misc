@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stack UI components on top of each other. -->
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android" a:orientation="vertical" a:layout_width="fill_parent" a:layout_height="fill_parent" >
+    <!-- Screen title. -->
+	<TextView a:text="Twitter OAuth Browser Example" a:layout_width="wrap_content" a:layout_height="wrap_content" a:layout_marginBottom="20px" />
+	<!-- Button to tweet and TextView to display the result. -->
+	<Button a:id="@+id/authenticateAndTweetButton" a:text="Authenticate And Tweet" a:layout_width="wrap_content" a:layout_height="wrap_content" a:layout_marginBottom="20px" />
+	<TextView a:id="@+id/tweetResult" a:text="" a:layout_width="wrap_content" a:layout_height="wrap_content" />
+</LinearLayout>
